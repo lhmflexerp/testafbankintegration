@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="bankintegration_invoice_supplier_tree" model="ir.ui.view">
+            <field name="name">bankintegration.account.invoice.supplier.tree</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_supplier_tree" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='state']" position="after">
+                    <field name="payment_autopay" class="oe_inline" />
+                </xpath>
+                <xpath expr="//field[@name='date_due']" position="after">
+                    <field name="payment_duedate" class="oe_inline" />
+                    <field name="payment_journal" class="oe_inline" />
+                </xpath> 
+                <xpath expr="//field[@name='state']" position="after">
+                    <field name="payment_status" class="oe_inline" />
+                </xpath>
+            </field>
+        </record>
+
+        <record id="oh_invoice_supplier_cancel_form_inherit" model="ir.ui.view">
+            <field name="name">oh.invoice.supplier.cancel.form.inherit</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account_cancel.invoice_supplier_cancel_form_inherit" />
+            <field name="arch" type="xml">
+                <button name="action_invoice_cancel" position="after">
+                    <button type="object" name="action_set_payment_again" string="Set for payment again" attrs="{'invisible': [('payment_status', 'not in', ['rejected', 'failed'])]}" />
+                    <field name="payment_status" class="oe_inline" invisible="1" />
+                </button>
+            </field>
+        </record>
+
+        <record id="bankintegration_invoice_supplier_form" model="ir.ui.view">
+            <field name="name">bankintegration.account.invoice.supplier.form</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_supplier_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='date_due']" position="after">
+                    <field name="state" invisible="1" />
+                    <field name="payment_duedate" class="oe_inline" attrs="{'readonly': [('state', '=', 'paid')]}"/>
+                    <field name="payment_journal" class="oe_inline" />
+                    <field name="payment_reference" class="oe_inline" />
+                    <field name="payment_autopay" class="oe_inline" />
+                </xpath>
+                <xpath expr="//field[@name='date']" position="after">
+                    <field name="payment_error" class="oe_inline" />
+                </xpath>
+                <xpath expr='//field[@name="currency_id"]' position="after">
+                    <field name="fik_number" />
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

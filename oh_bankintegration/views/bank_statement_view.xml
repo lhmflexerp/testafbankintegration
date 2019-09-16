@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="bank_statementline_form" model="ir.ui.view">
+            <field name="name">bankintegration.statement.line.form</field>
+            <field name="model">account.bank.statement.line</field>
+            <field name="inherit_id" ref="account.view_bank_statement_line_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//group" position="after">
+                    <group col="2">
+                        <field name="json_log" class="oe_inline" />
+                    </group>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

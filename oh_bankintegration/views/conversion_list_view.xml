@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="bank_conversion_list_tree" model="ir.ui.view">
+            <field name="name">bank.conversion_list.tree</field>
+            <field name="model">bankintegration.conversion_list</field>
+            <field name="arch" type="xml">
+                <tree string="Conversion List" editable="top">
+                    <field name="active"/>
+                    <field name="from_text"/>
+                    <field name="to_text"/>
+                    <field name="origin"/>
+                </tree>
+            </field>
+        </record>
+
+         <record id="action_bank_conversion_list" model="ir.actions.act_window">
+        <field name="name">conversion List</field>
+        <field name="res_model">bankintegration.conversion_list</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree</field>
+        <field name="help" type="html">
+          <p class="oe_view_nocontent_create">
+            Click to add a conversion.
+          </p>
+          </field>
+    </record>
+
+    </data>
+</odoo>

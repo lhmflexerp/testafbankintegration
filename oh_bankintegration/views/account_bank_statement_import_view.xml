@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="bankintegration_journal_dashboard_view_inherit" model="ir.ui.view">
+        <field name="name">bankintegration.account.journal.dashboard.kanban.inherit</field>
+        <field name="model">account.journal</field>
+        <field name="inherit_id" ref="account.account_journal_dashboard_kanban_view"/>
+        <field name="arch" type="xml">
+            <xpath expr='//div[@name="bank_journal_cta"]' position='inside'>
+                <button t-if="dashboard.bank_statements_source == 'bankintegration_import' &amp;&amp; dashboard.number_to_reconcile == 0" type="object" name="bankintegration_statement" class="btn btn-primary btn-sm">Import from bankintegration now</button>
+                <a t-if="dashboard.bank_statements_source == 'bankintegration_import' &amp;&amp; dashboard.number_to_reconcile > 0" type="object" name="bankintegration_statement" class="oe_inline">Import from bankintegration now</a>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="bankintegration_view_account_journal_form_inherit" model="ir.ui.view">
+        <field name="name">bankintegration.account.journal.form.inherit</field>
+        <field name="model">account.journal</field>
+        <field name="inherit_id" ref="account.view_account_journal_form"/>
+        <field name="arch" type="xml">
+            <field name="bank_id" position='after'>
+                <field name="customer_code" password="True"/>
+            </field>
+        </field>
+    </record>
+
+</odoo>

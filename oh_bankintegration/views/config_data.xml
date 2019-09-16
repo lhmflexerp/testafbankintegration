@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="0">
+
+	    <record model="ir.cron" id="cronjob_bankintegration_payment">
+            <field name='name'>Bankintegration automatic payment</field>
+            <field name='interval_type'>minutes</field>
+            <field name='interval_number'>30</field>
+            <field name="priotity">5</field>
+            <field name="model_id" ref="model_account_invoice"/>
+            <field name="state">code</field>
+            <field name="code">model.bankintegration_auto_payment()</field>
+            <field name="numbercall">-1</field>
+            <field name="active" eval="False" />
+            <field name="doall" eval="False" />
+        </record>
+
+        <record model="ir.cron" id="cronjob_bankintegration_payment_status">
+            <field name='name'>Bankintegration payment status</field>
+            <field name='interval_number'>30</field>
+            <field name='interval_type'>minutes</field>
+            <field name="numbercall">-1</field>
+            <field name="active" eval="True" />
+            <field name="doall" eval="False" />
+            <field name="model_id" ref="model_account_invoice"/>
+            <field name="state">code</field>
+            <field name="code">model.bankintegration_payment_status()</field>
+        </record>
+
+        <record model="ir.cron" id="cronjob_bankintegration_import">
+            <field name='name'>Bankintegration statement import auto</field>
+            <field name='interval_number'>4</field>
+            <field name='interval_type'>hours</field>
+            <field name="numbercall">-1</field>
+            <field name="active" eval="True" />
+            <field name="doall" eval="False" />
+            <field name="model_id" ref="model_account_journal"/>
+            <field name="state">code</field>
+            <field name="code">model.bankintegration_statement_auto()</field>
+        </record>
+
+    </data>  
+</odoo>

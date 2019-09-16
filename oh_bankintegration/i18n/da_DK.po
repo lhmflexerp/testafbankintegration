@@ -1,0 +1,574 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* oh_bankintegration
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-11 18:28+0000\n"
+"PO-Revision-Date: 2019-01-11 18:28+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: oh_bankintegration
+#: model:ir.model.fields,field_description:oh_bankintegration.field_res_config_settings__bi_api_key
+#: model_terms:ir.ui.view,arch_db:oh_bankintegration.oh_view_account_config_settings
+msgid "API Key"
+msgstr "API nøgle"
+
+#. module: oh_bankintegration
+#: model:ir.model.fields,help:oh_bankintegration.field_bank_integration_request__request_datetime
+msgid "API Request date"
+msgstr "API Request date"
+
+#. module: oh_bankintegration
+#: selection:account.invoice,payment_status:0
+#: selection:bank.integration.request,request_status:0
+msgid "Accepted"
+msgstr "Accepted"
+
+#. module: oh_bankintegration
+#: code:addons/oh_bankintegration/wizard/account_bankintegration_payment.py:34
+#, python-format
+msgid "Access Denied."
+msgstr "Access Denied."
+
+#. module: oh_bankintegration
+#: model:ir.model.fields,field_description:oh_bankintegration.field_bankintegration_conversion_list__active
+msgid "Active"
+msgstr "Aktiv"
+
+#. module: oh_bankintegration
+#: model_terms:ir.ui.view,arch_db:oh_bankintegration.account_bankintegration_payment_view
+#: model_terms:ir.ui.view,arch_db:oh_bankintegration.account_bankintegration_single_payment_view
+msgid "Are you sure to make the payment today?"
+msgstr "Are you sure to make the payment today?"
+
+#. module: oh_bankintegration
+#: code:addons/oh_bankintegration/models/account.py:15
+#, python-format
+msgid "Auto import from bankintegration"
+msgstr "Auto import from bankintegration"
+
+#. module: oh_bankintegration
+#: model:ir.model.fields,field_description:oh_bankintegration.field_account_invoice__payment_autopay
+msgid "Auto pay"
+msgstr "Auto pay"
+
+#. module: oh_bankintegration
+#: model:ir.model.fields,field_description:oh_bankintegration.field_bank_integration_request__bank_account
+msgid "Bank Account"
+msgstr "Bankkonto"
+
+#. module: oh_bankintegration
+#: model:ir.model,name:oh_bankintegration.model_bank_integration_request
+msgid "Bank Integration Request Status"
+msgstr "Bank Integration Request Status
+
+#. module: oh_bankintegration
+#: model:ir.model,name:oh_bankintegration.model_account_bank_statement_line
+msgid "Bank Statement Line"
+msgstr "Bank kontoudtog linie"
+
+#. module: oh_bankintegration
+#: code:addons/oh_bankintegration/models/account_invoice.py:346
+#, python-format
+msgid "Bank statement from  to "
+msgstr "Bankkontoudtog fra  til "
+
+#. module: oh_bankintegration
+#: model_terms:ir.ui.view,arch_db:oh_bankintegration.oh_view_account_config_settings
+msgid "Bankintegration"
+msgstr "Bankintegration"
+
+#. module: oh_bankintegration
+#: model:ir.actions.server,name:oh_bankintegration.cronjob_bankintegration_payment_ir_actions_server
+#: model:ir.cron,cron_name:oh_bankintegration.cronjob_bankintegration_payment
+#: model:ir.cron,name:oh_bankintegration.cronjob_bankintegration_payment
+msgid "Bankintegration automatic payment"
+msgstr "Bankintegration automatic payment"
+
+#. module: oh_bankintegration
+#: model:ir.actions.server,name:oh_bankintegration.cronjob_bankintegration_payment_status_ir_actions_server
+#: model:ir.cron,cron_name:oh_bankintegration.cronjob_bankintegration_payment_status
+#: model:ir.cron,name:oh_bankintegration.cronjob_bankintegration_payment_status
+msgid "Bankintegration payment status"
+msgstr "Bankintegration payment status"
+
+#. module: oh_bankintegration
+#: model:ir.model,name:oh_bankintegration.model_account_bankintegration_payment
+msgid "Bankintegration paymnet for selected invoices"
+msgstr "Bankintegration paymnet for selected invoices"
+
+#. module: oh_bankintegration
+#: model:ir.actions.server,name:oh_bankintegration.cronjob_bankintegration_import_ir_actions_server
+#: model:ir.cron,cron_name:oh_bankintegration.cronjob_bankintegration_import
+#: model:ir.cron,name:oh_bankintegration.cronjob_bankintegration_import
+msgid "Bankintegration statement import auto"
+msgstr "Bankintegration statement import auto"
+
+#. module: oh_bankintegration
+#: model_terms:ir.ui.view,arch_db:oh_bankintegration.account_bankintegration_payment_view
+#: model_terms:ir.ui.view,arch_db:oh_bankintegration.account_bankintegration_single_payment_view
+msgid "Cancel"
+msgstr "Annuller"
+
+#. module: oh_bankintegration
+#: selection:bank.integration.request,request_status:0
+msgid "Canceling"
+msgstr "Annullering"
+
+#. module: oh_bankintegration
+#: model_terms:ir.actions.act_window,help:oh_bankintegration.action_bank_conversion_list
+msgid "Click to add a conversion."
+msgstr "Click to add a conversion."
+
+#. module: oh_bankintegration
+#: model:ir.model,name:oh_bankintegration.model_res_config_settings
+msgid "Config Settings"
+msgstr "Konfigurer opsætning"
+
+#. module: oh_bankintegration
+#: model_terms:ir.ui.view,arch_db:oh_bankintegration.bank_conversion_list_tree
+msgid "Conversion List"
+msgstr "Conversion List"
+
+#. module: oh_bankintegration
+#: selection:account.invoice,payment_status:0
+#: selection:bank.integration.request,request_status:0
+msgid "Created"
+msgstr "Oprettet"
+
+#. module: oh_bankintegration
+#: model:ir.model.fields,field_description:oh_bankintegration.field_account_bankintegration_payment__create_uid
+#: model:ir.model.fields,field_description:oh_bankintegration.field_bank_integration_request__create_uid
+#: model:ir.model.fields,field_description:oh_bankintegration.field_bankintegration_conversion_list__create_uid
+msgid "Created by"
+msgstr "Oprettet af"
+
+#. module: oh_bankintegration
+#: model:ir.model.fields,field_description:oh_bankintegration.field_account_bankintegration_payment__create_date
+#: model:ir.model.fields,field_description:oh_bankintegration.field_bank_integration_request__create_date
+#: model:ir.model.fields,field_description:oh_bankintegration.field_bankintegration_conversion_list__create_date
+msgid "Created on"
+msgstr "Oprettet den"
+
+#. module: oh_bankintegration
+#: code:addons/oh_bankintegration/models/res_config.py:20
+#: model:ir.model.fields,field_description:oh_bankintegration.field_res_config_settings__autopay
+#, python-format
+msgid "Default auto pay"
+msgstr "Default auto pay"
+
+#. module: oh_bankintegration
+#: model_terms:ir.ui.view,arch_db:oh_bankintegration.oh_view_account_config_settings
+msgid "Default autopay"
+msgstr "Default autopay"
+
+#. module: oh_bankintegration
+#: model_terms:ir.ui.view,arch_db:oh_bankintegration.oh_view_account_config_settings
+msgid "Default payment journal"
+msgstr "Default payment journal"
+
+#. module: oh_bankintegration
+#: model:ir.model.fields,field_description:oh_bankintegration.field_account_bankintegration_payment__display_name
+#: model:ir.model.fields,field_description:oh_bankintegration.field_bank_integration_request__display_name
+#: model:ir.model.fields,field_description:oh_bankintegration.field_bankintegration_conversion_list__display_name
+msgid "Display Name"
+msgstr "Vis navn"
+
+#. module: oh_bankintegration
+#: model:ir.model.fields,help:oh_bankintegration.field_account_invoice__payment_duedate
+msgid "Due date for payment"
+msgstr "Due date for payment"
+
+#. module: oh_bankintegration
+#: model:ir.model.fields,field_description:oh_bankintegration.field_res_config_settings__erp_provider
+#: model_terms:ir.ui.view,arch_db:oh_bankintegration.oh_view_account_config_settings
+msgid "ERP Provider"
+msgstr "ERP udbyder"
+
+#. module: oh_bankintegration
+#: model_terms:ir.ui.view,arch_db:oh_bankintegration.oh_view_account_config_settings
+msgid "Edit text conversion list"
+msgstr "Edit text conversion list"
+
+#. module: oh_bankintegration
+#: code:addons/oh_bankintegration/models/account_invoice.py:426
+#, python-format
+msgid "Entries not matching."
+msgstr "Entries not matching."
+
+#. module: oh_bankintegration
+#: model:ir.model.fields,field_description:oh_bankintegration.field_account_invoice__fik_number
+#: model:ir.model.fields,field_description:oh_bankintegration.field_bank_integration_request__fik_number
+msgid "FIK Number"
+msgstr "FIK Number"
+
+#. module: oh_bankintegration
+#: selection:account.invoice,payment_status:0
+#: selection:bank.integration.request,request_status:0
+msgid "Failed"
+msgstr "Fejlet"
+
+#. module: oh_bankintegration
+#: code:addons/oh_bankintegration/models/account.py:54
+#, python-format
+msgid "For first time import please make a starting statement, with ending balance filled out, and a unposted transaction with starting reference number."
+msgstr "For first time import please make a starting statement, with ending balance filled out, and a unposted transaction with starting reference number."
+
+#. module: oh_bankintegration
+#: model:ir.model.fields,field_description:oh_bankintegration.field_bankintegration_conversion_list__from_text
+msgid "From"
+msgstr "Fra"
+
+#. module: oh_bankintegration
+#: model:ir.model.fields,field_description:oh_bankintegration.field_account_bankintegration_payment__id
+#: model:ir.model.fields,field_description:oh_bankintegration.field_bank_integration_request__id
+#: model:ir.model.fields,field_description:oh_bankintegration.field_bankintegration_conversion_list__id
+msgid "ID"
+msgstr "ID"
+
+#. module: oh_bankintegration
+#: model:ir.model.fields,field_description:oh_bankintegration.field_res_config_settings__multiple_payment_type
+msgid "If multiple payments to same customer on one day"
+msgstr "Hvis der er flere betalinger på samme kunde på en dag"
+
+#. module: oh_bankintegration
+#: model:ir.model.fields,help:oh_bankintegration.field_account_invoice__payment_autopay
+msgid "If this is set our scheduler automatic make payment"
+msgstr "If this is set our scheduler automatic make payment"
+
+#. module: oh_bankintegration
+#: model:ir.model,name:oh_bankintegration.model_account_bank_statement_import
+msgid "Import Bank Statement"
+msgstr "Importer bankkontoudtog"
+
+#. module: oh_bankintegration
+#: model_terms:ir.ui.view,arch_db:oh_bankintegration.bankintegration_journal_dashboard_view_inherit
+msgid "Import from bankintegration now"
+msgstr "Import fra bankintegration nu"
+
+#. module: oh_bankintegration
+#: model:ir.model.fields,field_description:oh_bankintegration.field_account_journal__customer_code
+msgid "Integration Code"
+msgstr "Integrationskode"
+
+#. module: oh_bankintegration
+#: selection:bank.integration.request,request_status:0
+msgid "Invalid Signature"
+msgstr "Invalid Signature"
+
+#. module: oh_bankintegration
+#: model:ir.model,name:oh_bankintegration.model_account_invoice
+msgid "Invoice"
+msgstr "Faktura"
+
+#. module: oh_bankintegration
+#: code:addons/oh_bankintegration/models/account_invoice.py:771
+#, python-format
+msgid "Invoice must be in open state in order to proceed."
+msgstr "Invoice must be in open state in order to proceed."
+
+#. module: oh_bankintegration
+#: code:addons/oh_bankintegration/models/account_invoice.py:768
+#, python-format
+msgid "Invoice must be in rejected or failed state in order to be reset."
+msgstr "Invoice must be in rejected or failed state in order to be reset."
+
+#. module: oh_bankintegration
+#: model:ir.model,name:oh_bankintegration.model_account_journal
+msgid "Journal"
+msgstr "Journal"
+
+#. module: oh_bankintegration
+#: model:ir.model.fields,field_description:oh_bankintegration.field_account_bankintegration_payment____last_update
+#: model:ir.model.fields,field_description:oh_bankintegration.field_bank_integration_request____last_update
+#: model:ir.model.fields,field_description:oh_bankintegration.field_bankintegration_conversion_list____last_update
+msgid "Last Modified on"
+msgstr "Sidst ændret den"
+
+#. module: oh_bankintegration
+#: model:ir.model.fields,field_description:oh_bankintegration.field_account_bankintegration_payment__write_uid
+#: model:ir.model.fields,field_description:oh_bankintegration.field_bank_integration_request__write_uid
+#: model:ir.model.fields,field_description:oh_bankintegration.field_bankintegration_conversion_list__write_uid
+msgid "Last Updated by"
+msgstr "Sidst opdateret af"
+
+#. module: oh_bankintegration
+#: model:ir.model.fields,field_description:oh_bankintegration.field_account_bankintegration_payment__write_date
+#: model:ir.model.fields,field_description:oh_bankintegration.field_bank_integration_request__write_date
+#: model:ir.model.fields,field_description:oh_bankintegration.field_bankintegration_conversion_list__write_date
+msgid "Last Updated on"
+msgstr "Sidst opdateret den"
+
+#. module: oh_bankintegration
+#: model:ir.model.fields,field_description:oh_bankintegration.field_account_bank_statement_line__json_log
+msgid "Log"
+msgstr "Log"
+
+#. module: oh_bankintegration
+#: model_terms:ir.ui.view,arch_db:oh_bankintegration.account_bankintegration_payment_view
+#: model_terms:ir.ui.view,arch_db:oh_bankintegration.account_bankintegration_single_payment_view
+msgid "Make payment"
+msgstr "Make payment"
+
+#. module: oh_bankintegration
+#: selection:account.invoice,payment_status:0
+#: selection:bank.integration.request,request_status:0
+msgid "Not Found"
+msgstr "Ikke fundet"
+
+#. module: oh_bankintegration
+#: code:addons/oh_bankintegration/models/account.py:80
+#: code:addons/oh_bankintegration/models/account_invoice.py:423
+#: code:addons/oh_bankintegration/models/account_invoice.py:429
+#: code:addons/oh_bankintegration/models/account_invoice.py:432
+#, python-format
+msgid "Nothing to import."
+msgstr "Nothing to import.""
+
+#. module: oh_bankintegration
+#: code:addons/oh_bankintegration/wizard/account_bankintegration_payment.py:26
+#, python-format
+msgid "One of the selected invoice is already under payment processing/processed status."
+msgstr "One of the selected invoice is already under payment processing/processed status."
+
+#. module: oh_bankintegration
+#: model:ir.model.fields,field_description:oh_bankintegration.field_bankintegration_conversion_list__origin
+msgid "Origin"
+msgstr "Origin"
+
+#. module: oh_bankintegration
+#: selection:res.config.settings,multiple_payment_type:0
+msgid "Pay each separately"
+msgstr "Betal dem hver især"
+
+#. module: oh_bankintegration
+#: selection:res.config.settings,multiple_payment_type:0
+msgid "Pay national and international collected in one single payment"
+msgstr "Betal nationale og internationale i en samlet betaling"
+
+#. module: oh_bankintegration
+#: selection:res.config.settings,multiple_payment_type:0
+msgid "Pay only international collected in one single payment"
+msgstr "Betal kun internationale i en samlet betaling"
+
+#. module: oh_bankintegration
+#: model:ir.actions.act_window,name:oh_bankintegration.action_make_single_bankintegration_payment
+#: model_terms:ir.ui.view,arch_db:oh_bankintegration.account_bankintegration_single_payment_view
+msgid "Pay this bill with bankintegration"
+msgstr "Pay this bill with bankintegration"
+
+#. module: oh_bankintegration
+#: model:ir.model.fields,field_description:oh_bankintegration.field_account_invoice__payment_error
+msgid "Payment Error"
+msgstr "Payment Error"
+
+#. module: oh_bankintegration
+#: model:ir.model.fields,field_description:oh_bankintegration.field_bank_integration_request__invoice_id
+msgid "Payment Invoice"
+msgstr "Payment Invoice"
+
+#. module: oh_bankintegration
+#: code:addons/oh_bankintegration/models/res_config.py:19
+#: model:ir.model.fields,field_description:oh_bankintegration.field_res_config_settings__payment_margin
+#: model:ir.model.fields,help:oh_bankintegration.field_res_config_settings__payment_margin
+#, python-format
+msgid "Payment Margin"
+msgstr "Betalings margin"
+
+#. module: oh_bankintegration
+#: model:ir.model.fields,field_description:oh_bankintegration.field_account_invoice__payment_reference
+msgid "Payment Reference"
+msgstr "Betalingsreferene"
+
+#. module: oh_bankintegration
+#: model:ir.model.fields,field_description:oh_bankintegration.field_account_invoice__payment_duedate
+msgid "Payment date"
+msgstr "Payment date"
+
+#. module: oh_bankintegration
+#: model:ir.model.fields,field_description:oh_bankintegration.field_account_invoice__payment_journal
+#: model:ir.model.fields,field_description:oh_bankintegration.field_res_config_settings__payment_journal
+msgid "Payment journal"
+msgstr "Payment journal"
+
+#. module: oh_bankintegration
+#: model_terms:ir.ui.view,arch_db:oh_bankintegration.oh_view_account_config_settings
+msgid "Payment margin"
+msgstr "Payment margin"
+
+#. module: oh_bankintegration
+#: model:ir.model.fields,field_description:oh_bankintegration.field_account_invoice__payment_status
+msgid "Payment status"
+msgstr "Payment status"
+
+#. module: oh_bankintegration
+#: model:ir.actions.act_window,name:oh_bankintegration.action_make_bankintegration_payment
+#: model_terms:ir.ui.view,arch_db:oh_bankintegration.account_bankintegration_payment_view
+msgid "Payment with bankintegraiton"
+msgstr "Payment with bankintegraiton"
+
+#. module: oh_bankintegration
+#: selection:account.invoice,payment_status:0
+#: selection:bank.integration.request,request_status:0
+msgid "Pending"
+msgstr "Afventer"
+
+#. module: oh_bankintegration
+#: model:ir.model.fields,help:oh_bankintegration.field_res_config_settings__bi_api_key
+msgid "Please enter API Key."
+msgstr "Please enter API Key."
+
+#. module: oh_bankintegration
+#: model:ir.model.fields,help:oh_bankintegration.field_res_config_settings__erp_provider
+msgid "Please enter ERP Provider name."
+msgstr "Please enter ERP Provider name."
+
+#. module: oh_bankintegration
+#: model:ir.model.fields,help:oh_bankintegration.field_account_journal__customer_code
+msgid "Please provide Integration Code for bankintegration."
+msgstr "Please provide Integration Code for bankintegration."
+
+#. module: oh_bankintegration
+#: selection:account.invoice,payment_status:0
+#: selection:bank.integration.request,request_status:0
+msgid "Rejected"
+msgstr "Afvist"
+
+#. module: oh_bankintegration
+#: code:addons/oh_bankintegration/models/account_invoice.py:435
+#, python-format
+msgid "Request Id is not matching."
+msgstr "Request Id is not matching."
+
+#. module: oh_bankintegration
+#: model:ir.model.fields,field_description:oh_bankintegration.field_bank_integration_request__request_datetime
+msgid "Request datetime"
+msgstr "Request datetime"
+
+#. module: oh_bankintegration
+#: model:ir.model.fields,field_description:oh_bankintegration.field_account_invoice__request_id
+#: model:ir.model.fields,field_description:oh_bankintegration.field_bank_integration_request__request_id
+msgid "Request id"
+msgstr "Request id"
+
+#. module: oh_bankintegration
+#: model:ir.model.fields,field_description:oh_bankintegration.field_bank_integration_request__request_status
+msgid "Request status"
+msgstr "Request status"
+
+#. module: oh_bankintegration
+#: model:ir.model.fields,field_description:oh_bankintegration.field_bank_integration_request__response_text
+msgid "Response text"
+msgstr "Response text"
+
+#. module: oh_bankintegration
+#: code:addons/oh_bankintegration/wizard/account_bankintegration_payment.py:31
+#, python-format
+msgid "Selected invoice(s) cannot be paid as they are not in 'Open' status."
+msgstr "Selected invoice(s) cannot be paid as they are not in 'Open' status."
+
+#. module: oh_bankintegration
+#: model_terms:ir.ui.view,arch_db:oh_bankintegration.oh_invoice_supplier_cancel_form_inherit
+msgid "Set for payment again"
+msgstr "Set til betaling igen"
+
+#. module: oh_bankintegration
+#: code:addons/oh_bankintegration/models/account_invoice.py:713
+#: code:addons/oh_bankintegration/models/account_invoice.py:737
+#, python-format
+msgid "Some of the selected invoices has already been processed."
+msgstr "Some of the selected invoices has already been processed."
+
+#. module: oh_bankintegration
+#: code:addons/oh_bankintegration/models/account_invoice.py:294
+#, python-format
+msgid "Something has went wrong. Please check with your administartor"
+msgstr "Something has went wrong. Please check with your administartor"
+
+#. module: oh_bankintegration
+#: code:addons/oh_bankintegration/models/account_invoice.py:441
+#, python-format
+msgid "Something has went wrong. Please try after sometime."
+msgstr "Something has went wrong. Please try after sometime."
+
+#. module: oh_bankintegration
+#: code:addons/oh_bankintegration/models/account.py:32
+#, python-format
+msgid "Something went wrong."
+msgstr "Something went wrong."
+
+#. module: oh_bankintegration
+#: model_terms:ir.ui.view,arch_db:oh_bankintegration.oh_view_account_config_settings
+msgid "Statement text converting"
+msgstr "Statement text converting""
+
+#. module: oh_bankintegration
+#: selection:account.invoice,payment_status:0
+#: selection:bank.integration.request,request_status:0
+msgid "Success"
+msgstr "Gennemført"
+
+#. module: oh_bankintegration
+#: model:ir.model.fields,field_description:oh_bankintegration.field_bankintegration_conversion_list__to_text
+msgid "To"
+msgstr "Til"
+
+#. module: oh_bankintegration
+#: model:ir.model.fields,field_description:oh_bankintegration.field_bank_integration_request__vendor_account
+msgid "Vendor Bank Account"
+msgstr "Vendor Bank Account"
+
+#. module: oh_bankintegration
+#: selection:bank.integration.request,request_status:0
+msgid "Warning"
+msgstr "Advarsel"
+
+#. module: oh_bankintegration
+#: code:addons/oh_bankintegration/models/account_bank_statement_import.py:37
+#, python-format
+msgid "You have to set a Default Debit Account and a Default Credit Account for the journal: %s"
+msgstr "You have to set a Default Debit Account and a Default Credit Account for the journal: %s"
+
+#. module: oh_bankintegration
+#: model:ir.model,name:oh_bankintegration.model_bankintegration_conversion_list
+msgid "bankintegration.conversion_list"
+msgstr "bankintegration.conversion_list"
+
+#. module: oh_bankintegration
+#: model:ir.actions.act_window,name:oh_bankintegration.action_bank_conversion_list
+msgid "conversion List"
+msgstr "tekstkonverteringsliste"
+
+#. module: oh_bankintegration
+#: code:addons/oh_bankintegration/models/res_config.py:32
+#: model:ir.model.fields,field_description:oh_bankintegration.field_res_config_settings__use_note_msg
+#: model_terms:ir.ui.view,arch_db:oh_bankintegration.oh_view_account_config_settings
+#, python-format
+msgid "Use note as lable?"
+msgstr "Brug note som label?"
+
+#. module: oh_bankintegration
+#: code:addons/oh_bankintegration/models/res_config.py:22
+#: model:ir.model.fields,field_description:oh_bankintegration.field_res_config_settings__set_validate_payment
+#: model_terms:ir.ui.view,arch_db:oh_bankintegration.oh_view_account_config_settings
+#, python-format
+msgid "Set for payment after validate?"
+msgstr "Set til betaling efter bogføring?"
+
+#. module: oh_bankintegration
+#: model:ir.model.fields,field_description:oh_bankintegration.field_res_partner_bank__bankintegration_acc_number
+msgid "Domestic account number"
+msgstr "Indenlandsk kontonummer"
+
+#. module: oh_bankintegration
+#: model:ir.model.fields,help:oh_bankintegration.field_res_partner_bank__bankintegration_acc_number
+msgid "For bankintegration insert domestic account number, if IBAN number is used in the Account Number field"
+msgstr "For bankintegration indsæt  indenlandsk kontonummer, hvis  der er angivet et IBAN kontonummer i Kontonummer feltet"

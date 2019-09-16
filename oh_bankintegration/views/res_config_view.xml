@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="oh_view_account_config_settings" model="ir.ui.view">
+            <field name="name">bankintegration account settings</field>
+            <field name="model">res.config.settings</field>
+            <field name="inherit_id" ref="account.res_config_settings_view_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//div[@id='invoicing_settings']" position="after">
+                    <h2>Bankintegration</h2>
+                    <div class="row mt16 o_settings_container" id="oh_bankintegration" groups="account.group_account_user">
+                        <div class="col-12 col-lg-6 o_setting_box">
+                            <div class="o_setting_left_pane"/>
+                            <div class="o_setting_right_pane">
+                                <div class="content-group">
+                                    <div class="row mt16">
+                                        <label string="Payment margin" for="payment_margin" class="col-lg-5 o_light_label"/>
+                                        <field name="payment_margin"/>
+                                    </div>
+                                    <div class="row mt16">
+                                        <label string="Default autopay" for="autopay" class="col-lg-5 o_light_label"/>
+                                        <field name="autopay" />
+                                    </div>
+                                    <div class="row mt16">
+                                        <label string="Set for payment after validate?" for="set_validate_payment" class="col-lg-5 o_light_label"/>
+                                        <field name="set_validate_payment" />
+                                    </div>
+                                    <div class="row mt16">
+                                        <label string="Default payment journal" for="payment_journal" class="col-lg-5 o_light_label"/>
+                                        <field name="payment_journal" />
+                                    </div>
+                                    <div class="row mt16">
+                                        <label string="ERP Provider" for="erp_provider" class="col-lg-5 o_light_label"/>
+                                        <field name="erp_provider" password="True" />
+                                    </div>
+                                    <div class="row mt16">
+                                        <label string="API Key" for="bi_api_key" class="col-lg-5 o_light_label"/>
+                                        <field name="bi_api_key" password="True" />
+                                    </div>
+                                    <div class="row mt16">
+                                        <label string="Use not as label in denish?" for="use_note_msg" class="col-lg-5 o_light_label"/>
+                                        <field name="use_note_msg" />
+                                    </div>
+                                    <div class="row mt16">
+                                        <div class="col-lg-12">Statement text converting</div>
+                                        <div class="col-lg-12">
+                                            <button type="action" string="Edit text conversion list" name="%(oh_bankintegration.action_bank_conversion_list)d" icon="fa-cogs" class="oe_inline oe_link"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </xpath>    
+            </field>    
+        </record>
+
+    </data>
+</odoo>

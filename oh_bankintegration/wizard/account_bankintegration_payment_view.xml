@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>		
+
+    	<record id="account_bankintegration_payment_view" model="ir.ui.view">
+            <field name="name">account.bankintegration.payment.form</field>
+            <field name="model">account.bankintegration.payment</field>
+            <field name="arch" type="xml">
+                <form string="Payment with bankintegraiton">
+                    <p class="oe_grey">
+                        Are you sure to make the payment today?
+                    </p>
+                    <footer>
+                        <button string="Make payment" name="make_bankintegration_payment" type="object" default_focus="1" class="btn-primary"/>
+                        <button string="Cancel" class="btn-default" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+		<act_window id="action_make_bankintegration_payment"
+            multi="True"
+            key2="client_action_multi" name="Payment with bankintegraiton"
+            res_model="account.bankintegration.payment" src_model="account.invoice"
+            view_mode="form" target="new" view_type="form" 
+            domain="[('type','=', 'in_invoice')]" groups="account.group_account_user" />
+
+        <record id="account_bankintegration_single_payment_view" model="ir.ui.view">
+            <field name="name">account.bankintegration.single.payment.form</field>
+            <field name="model">account.bankintegration.payment</field>
+            <field name="arch" type="xml">
+                <form string="Pay this bill with bankintegration">
+                    <p class="oe_grey">
+                        Are you sure to make the payment today?
+                    </p>
+                    <footer>
+                        <button string="Make payment" name="make_bankintegration_payment" type="object" default_focus="1" class="btn-primary"/>
+                        <button string="Cancel" class="btn-default" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <act_window id="action_make_single_bankintegration_payment"
+            name="Pay this bill with bankintegration"
+            res_model="account.bankintegration.payment" src_model="account.invoice"
+            view_mode="form" target="new" view_type="form" 
+            domain="[('type','=', 'in_invoice')]" groups="account.group_account_user" />
+    </data>
+</odoo>
